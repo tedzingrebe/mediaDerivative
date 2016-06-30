@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
-  index -> index.html
-  about -> about.html
+  def index
+  end
+
+  def about
+  end
 end

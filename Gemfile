@@ -5,8 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-#post gres sql
-gem 'pg', '~> 0.18.4'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -44,6 +42,10 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
+end
+  group :production do
+  #post gres sql
+  gem 'pg', '~> 0.18.4'
+   gem 'heroku-deflater', :group => :production
 end
 
